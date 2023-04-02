@@ -1,0 +1,13 @@
+# Next.js
+/.next/
+/out/
+/dist/
+/.vercel/
+
+# Storybook
+/.storybook/
+/storybook-static/
+/docs/
+
+/node_modules/
+.DS_Store
