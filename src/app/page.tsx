@@ -1,5 +1,3 @@
-import IndexPage from '../components/pages/IndexPage';
-
 type Props = { 
   searchParams: { question: string; };
   headers : {
@@ -7,7 +5,7 @@ type Props = {
   }
 }
 
-async function getAnswer(question : string) {
+async function getAnswer(question : string) : Promise<string> {
   const params = {
     question
   }
@@ -24,9 +22,6 @@ export default async function Page(props: Props) {
                   ? await getAnswer(props.searchParams.question) : ''
 
   return (
-    <>
-      <IndexPage />
-      <div>{answer}</div>
-    </>
+    <div>{answer}</div>
   )
 }

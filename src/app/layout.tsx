@@ -1,4 +1,5 @@
 import { Metadata } from "next"
+import ZundamonQuestionForm from "../components/ZundamonQuestionForm"
 
 export const metadata = {
   title: 'Top page.',
@@ -12,7 +13,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <body>{children}</body>
+      <body>
+        <ZundamonQuestionForm />
+        {children}
+      </body>
     </html>
   )
 }

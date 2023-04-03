@@ -1,6 +1,6 @@
 'use client'
 
-import ZundamonSrc from '../../../assets/images/zundamon.png'
+import ZundamonSrc from '../../assets/images/zundamon.png'
 import Image from 'next/image'
 
 import styles from './index.module.css'
