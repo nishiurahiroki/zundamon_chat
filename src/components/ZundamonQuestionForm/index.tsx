@@ -26,7 +26,9 @@ export default function Index(props : Props) {
   return (
     <div className={styles.container}>
       <div>
-        <input type="text" value={question} onChange={handleOnChangeQuestion} />
+        <textarea value={question} onChange={handleOnChangeQuestion}>
+          {question}
+        </textarea>
         <button onClick={handleOnClickQuestionButton(question)}>質問する</button>
       </div>
       <div>
